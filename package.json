@@ -9,9 +9,9 @@
     "url": "https://github.com/Obiajulu-gif/Prompt-Hash-Stellar"
   },
   "scripts": {
-    "dev": "node scripts/check-local-setup.mjs --warn-only && vite",
-    "start": "vite",
-    "build": "vite build",
+    "dev": "node api.js && node scripts/check-local-setup.mjs --warn-only && vite",
+    "start": "node api.js && vite",
+    "build": "node api.js && vite build",
     "prebuild": "node scripts/check-local-setup.mjs --warn-only",
     "typecheck": "tsc -b",
     "test": "vitest run",
@@ -79,7 +79,7 @@
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.62.1",
     "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.6",
     "@types/node": "^26.2.0",
